@@ -34,7 +34,7 @@ Then, you can run this every time to create the .UF2 file:
 
 This will create a file called `apps.uf2` which you can then copy into a Dabao.
 
-> ![NOTE]
+> [!NOTE]
 > The loader & xous ABI version *must* match the version pointed to in the Cargo.toml file.
 
 All apps are built against a Xous version that is specified like this:
