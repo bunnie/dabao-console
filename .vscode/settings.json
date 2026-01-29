@@ -1,0 +1,7 @@
+{
+    "rust-analyzer.rustfmt.extraArgs": [
+        "+nightly"
+    ],
+    "files.trimTrailingWhitespace": true,
+    "editor.formatOnSave": true
+}
