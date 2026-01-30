@@ -43,4 +43,4 @@ board-dabao = [
 ctap-bringup = []
 usb = []
 aestests = ["aes"]
-default = []
+default = ["usb"]
