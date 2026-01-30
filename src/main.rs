@@ -27,12 +27,6 @@ fn main() {
         usb.serial_console_input_injection();
     }
 
-    #[cfg(feature = "ctap-bringup")]
-    {
-        tt.sleep_ms(4000).ok();
-        crate::ctap::ctap_test();
-    }
-
     // idle the main thread, all children are spawned
     loop {
         tt.sleep_ms(2_000).ok();

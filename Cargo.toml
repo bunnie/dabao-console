@@ -23,9 +23,6 @@ bytemuck = "1.24.0"
 
 aes = { default-features = false, optional = true, git = "https://github.com/betrusted-io/xous-core", rev = "6f71359d18f457855562e712d48034595de7c342" }
 
-# hid bringup
-xous-usb-hid = { git = "https://github.com/betrusted-io/xous-usb-hid.git", branch = "main", optional = true }
-
 bio-lib = { git = "https://github.com/betrusted-io/xous-core", rev = "6f71359d18f457855562e712d48034595de7c342" }
 arbitrary-int = "1.2"
 

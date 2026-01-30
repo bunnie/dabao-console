@@ -342,7 +342,6 @@ dependencies = [
  "xous-api-log",
  "xous-api-names",
  "xous-api-ticktimer",
- "xous-usb-hid",
 ]
 
 [[package]]
