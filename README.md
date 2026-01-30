@@ -2,9 +2,12 @@
 
 This repo serves as a CI target and reference code for how to build an "out of tree" app for Xous.
 
-"Out of tree" means you don't have to clone all of Xous to build the app - only your application code is in the repository.
+"Out of tree" means only the application code is in the repository, and the xous-core kernel is a github reference.
 
-The trick to doing this is to refer to all of the Xous dependencies using a git hash reference in the Xous work space. This effectively pins the app to a given version of Xous.
+> [!IMPORTANT]
+> Applications and kernels are closely linked by design. A given 'kernel' can be thought of as a "distro" that contains a subset of system services; an 'app' will have dependencies on specific features in a given 'distro'. If your app isn't working, check that the loader and kernel on your device match the assumptions of your app!
+
+All of the Xous dependencies relied upon by an app are encoded with git hash references to the Xous workspace. This effectively pins the app to a given version of Xous.
 
 # Building the Stand-Alone ELF Binary
 
