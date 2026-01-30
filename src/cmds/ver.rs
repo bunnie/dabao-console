@@ -28,6 +28,14 @@ impl<'a> ShellCmdApi<'a> for Ver {
                         bao1x_hal::board::BOOKEND_END
                     );
                 }
+                "build" => {
+                    log::info!(
+                        "{}VER.OUT-OF-TREE,{}",
+                        bao1x_hal::board::BOOKEND_START,
+                        bao1x_hal::board::BOOKEND_END
+                    );
+                    write!(ret, "Out of tree build").ok();
+                }
                 _ => {
                     write!(ret, "{}", helpstring).unwrap();
                 }
