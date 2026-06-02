@@ -45,3 +45,9 @@ All apps are built against a Xous version that is specified like this:
 `git = "https://github.com/betrusted-io/xous-core", rev = "6f71359d18f457855562e712d48034595de7c342"`
 
 A Xous version compatible with the commit ref specified here must be loaded on the Dabao, otherwise, you will have unpredictable program behavior. At the moment Xous is under heavy development, so there isn't a release tag that's guaranteed to work - it's recommended to either pull a Xous image from the [latest CI](https://ci.betrusted.io/latest-ci/baochip/dabao/) build, or preferably, to build an image using the `xous-core` repository.
+
+## Toolkit
+
+A `build.rs` script is included in this example that attempts to ensure that the Xous toolkit is automatically installed
+on your machine. The toolkit includes the Xous standard library. This is necessary because Xous is a tier-3 Rust target,
+and thus its `std` has to be installed with a local script as it is not available as part of `rustup`
