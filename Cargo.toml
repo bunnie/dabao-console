@@ -32,6 +32,11 @@ getrandom = "=0.2.12"
 git = "https://github.com/betrusted-io/xous-core"
 rev = "6f71359d18f457855562e712d48034595de7c342"
 
+[build-dependencies]
+serde_json = "1"
+zip = "2"
+ureq = "2"
+
 [features]
 bao1x = ["utralib/bao1x", "usb-bao1x/bao1x", "aes/bao1x"]
 board-dabao = [
