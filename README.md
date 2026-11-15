@@ -9,6 +9,12 @@ This repo serves as a CI target and reference code for how to build an "out of t
 
 All of the Xous dependencies relied upon by an app are encoded with git hash references to the Xous workspace. This effectively pins the app to a given version of Xous.
 
+# Prerequisites
+
+You'll need a recent Rust (most recently tested against Rust 1.100) and have the following target installed:
+
+`rustup target add riscv32imac-unknown-none-elf`
+
 # Building the Stand-Alone ELF Binary
 
 You can build the app with a command line like this:
