@@ -42,7 +42,7 @@ This will create a file called `apps.uf2` which you can then copy into a Dabao.
 
 All apps are built against a Xous version that is specified like this:
 
-`git = "https://github.com/betrusted-io/xous-core", rev = "6f71359d18f457855562e712d48034595de7c342"`
+`git = "https://github.com/betrusted-io/xous-core", rev = "4e9a9909e6ba92b35d7f671074060f68d171cb69"`
 
 A Xous version compatible with the commit ref specified here must be loaded on the Dabao, otherwise, you will have unpredictable program behavior. At the moment Xous is under heavy development, so there isn't a release tag that's guaranteed to work - it's recommended to either pull a Xous image from the [latest CI](https://ci.betrusted.io/latest-ci/baochip/dabao/) build, or preferably, to build an image using the `xous-core` repository.
 

@@ -1,0 +1,15 @@
+# Normalize: store LF in the repo; each platform checks out LF (no CRLF games).
+* text=auto eol=lf
+
+# Explicit binaries — never touch line endings in these.
+*.uf2 binary
+*.zip binary
+*.bin binary
+*.elf binary
+*.img binary
+*.png binary
+*.jpg binary
+*.gif binary
+*.ico binary
+*.ttf binary
+*.pdf binary
